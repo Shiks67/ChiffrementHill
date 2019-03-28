@@ -1,0 +1,22 @@
+﻿<Window x:Class="ChiffrementHill.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChiffrementHill"
+        mc:Ignorable="d"
+        Title="Chiffrement Hill" Height="450" Width="679">
+    <Grid>
+        <TextBox Name="message" HorizontalAlignment="Left" Height="103" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="530"/>
+        <Button Name="encrypt_btn" Content="Chiffrer" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="75" Click="Encrypt_btn_Click"/>
+        <Button Name="decrypt_btn"  Content="Déchiffrer" HorizontalAlignment="Left" Margin="90,118,0,0" VerticalAlignment="Top" Width="75" Click="Decrypt_btn_Click"/>
+        <TextBox x:Name="m1" Text="9" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="21" Margin="545,33,0,0"/>
+        <TextBox x:Name="m2" Text="4" HorizontalAlignment="Left" Height="23" Margin="571,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="21"/>
+        <TextBox x:Name="m3" Text="5" HorizontalAlignment="Left" Height="23" Margin="545,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="21"/>
+        <TextBox x:Name="m4" Text="7" HorizontalAlignment="Left" Height="23" Margin="571,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="21"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Matrice :" VerticalAlignment="Top" Margin="545,11,0,0"/>
+        <TextBox x:Name="result" HorizontalAlignment="Left" Height="103" Margin="10,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="530"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Resultat :" VerticalAlignment="Top" Margin="10,166,0,0"/>
+
+    </Grid>
+</Window>
